@@ -22,11 +22,11 @@ const AppBlock: React.FC<AppBlockProps> = ({ app, isAdded }) => {
 
   return (
     <div className={`app-block flex items-center p-6 rounded-md bg-slate-100`}>
-      <div className="app-icon mr-5">
+      <div className="app-icon mr-3">
         <Image alt="icon" src={app.icon} width="60" height="60" />
       </div>
       <div className="app-info flex-1">
-        <h3 className="font-bold">{app.title}</h3>
+        <h3 className="text-2xl">{app.title}</h3>
         <p className="uppercase">{app.description}</p>
       </div>
       <div className="app-action cursor-pointer p-2" onClick={handleAddRemoveClick}>
